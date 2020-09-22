@@ -4,9 +4,6 @@ import filaPrioridade
 from random import randint
 
 NUMERO_DE_THREADS = 100 # ESTE VALOR INDICA A QUANTIDADE DE THREADS QUE SERÃO GERADAS.
-                      # Vale ressaltar que, como não foram implementadas estratégias de sincro-
-                      # nização, aumentar o número de threads serve para ilustrar a dessincro-
-                      # nização das alterações num ambiente desordenado.
 
 MODO_DE_OPERACAO = 0  # 0 = escritores tem prioridade 
                       # 1 = leitores tem prioridade
@@ -28,6 +25,3 @@ for thread_number in range (NUMERO_DE_THREADS):
 
 while(True):
   loop = 0
-
-#while not escalonador.isEmpty(): 
-  #print(escalonador.proximo()) 
